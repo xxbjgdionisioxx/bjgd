@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio | BJGD</title>
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css'><link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-custom navbar-mainbg fixed-top">
+  <div class="col">
+    <img src="assets/img/logo.png" class="header-logo ml-3" width="50px">
+  </div>
+        <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse pl-4 pr-4" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" id="defaultOpen" onclick="openPage('home', this)"><i class="fa fa-home"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="openPage('about', this)"><i class="fa fa-align-left"></i>About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="openPage('project', this)"><i class="far fa-clone"></i>Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="openPage('skills', this)"><i class="fa fa-list-alt"></i>Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="openPage('contact', this)"><i class="fa fa-address-card"></i>Contact</a>
+                </li>
+              </ul>
+        </div>
+  </nav>
+
+  <div class="section" style="right: 10px; bottom: 10px; position: fixed; z-index: 9999;">
+    <input type="button" class="btn badge-dark border-0" value="Light Mode" onclick="myFunction()" id="dark-light">
+  </div>
+      <!---try id para sa image na hindi naiinvert-->
+
+      <div id="home" class="tabcontent">
+        <div class="card bg-transparent border-0 kardero">
+          <div class="row front">
+            <div class="col-auto nameko">
+              <div class="col fa-1x hi">Hi!</div>
+              <div class="col text-uppercase fa-2x font-weight-bold bryan">I'm Bryan James</div>
+              <div class="col text-uppercase fa-1x nothing">Aspiring Prostitute</div>
+                <div class="row pt-2 nameko">
+                  <div class="col-auto">
+                    <input type="button" class="btn btn-dark rounded-0" value="PROJECTS">
+                  </div>
+                  <div class="col-auto">
+                    <input type="button" class="btn btn-light rounded-0 border-dark" value="GITHUB">
+                  </div>
+                </div>
+            </div>
+            <div class="col-auto nameko1 p-3">
+              <img src="assets/img/home-pic.png" class="img-fluid" id="try">
+            </div>
+          </div>
+        </div>
+      </div>
+          
+      <div id="about" class="tabcontent">
+        <div class="card bg-transparent border-0">
+          <div class="col fa-1x text-center font-weight-bold text-uppercase hi">About Me</div>
+          <div class="row front">
+            <div class="col-auto nameko p-3">
+              <img src="assets/img/bjgd.png" width="500px" class="img-fluid" id="me">
+            </div>
+            <div class="col-auto aboutko">
+                <div class="text-uppercase fa-1x nothing font-weight-bold pb-5 pt-5">Personal Details</div>
+                <p class="font-weight-light weh">I'm Bryan James G. Dionisio, looking for a position to kickstart my career in the<br> field of Frontend Development. Have a Degree of Bachelor of Science in<br> Information Technology from Access Computer and Technical College Inc.<br> I've been interested in learning Frontend Development during my entire<br> college and took this chance during pandemic to be more skilled and<br> knowledgeable on this field.</p>
+                <input type="button" class="btn btn-dark rounded-0" value="Download CV">
+            </div>
+          </div>
+        </div>
+        <section>
+          <div class="text-uppercase fa-1x nothing font-weight-bold pb-5 pt-5 text-center what">What I can do?</div>
+        </section>
+        <section class="">
+          <div class="row anokayako">
+            <div class="card border-0 bg-transparent p-4 mb-5">
+              <img src="assets/img/bjgd.png" width="500px" class="img-fluid" id="me">
+            </div>
+            <div class="card border-0 bg-transparent p-4 mb-5">
+              <img src="assets/img/bjgd.png" width="500px" class="img-fluid" id="me">
+            </div>
+            <div class="card border-0 bg-transparent p-4 mb-5">
+              <img src="assets/img/bjgd.png" width="500px" class="img-fluid" id="me">
+            </div>
+        </div>
+        </section>
+      </div>
+
+        <div id="project" class="tabcontent">
+        <h3>Project</h3>
+        <p>In dapibus, magna vulputate sodales pharetra, nulla leo posuere nibh, eget porta tortor urna a metus. Pellentesque laoreet ornare velit eu sodales. In ornare tellus ligula, vitae feugiat sapien dignissim eu. Nulla porttitor elementum vehicula. Aliquam consequat volutpat erat, vel luctus velit maximus id. Sed sit amet elit erat. Quisque rutrum tristique sapien et lobortis. Etiam non tincidunt erat. Aliquam laoreet sodales neque, quis sollicitudin metus maximus sit amet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris sit amet eleifend diam. Curabitur sollicitudin nunc eu rhoncus ullamcorper. Nulla molestie ornare tellus, ac fringilla urna ultrices nec. Sed placerat consectetur neque ac dictum.</p> 
+        </div>
+        
+        <div id="skills" class="tabcontent">
+            <h3>Skills</h3>
+            <p>Praesent imperdiet sagittis ligula vitae maximus. Curabitur condimentum sem sed dui condimentum, at suscipit leo vehicula. Sed libero lacus, efficitur ac odio sed, facilisis aliquet velit. Cras malesuada mattis leo non condimentum. Nullam ac malesuada metus, quis mattis sem. Fusce aliquet consequat commodo. Cras quis cursus lectus. Suspendisse volutpat odio vitae arcu hendrerit elementum. Nunc nec ultricies ipsum. Integer nibh mauris, aliquam elementum velit ut, vestibulum feugiat mi. Ut vel porta leo, tincidunt finibus nisi. Quisque molestie sit amet enim non sagittis. Quisque ut ullamcorper dolor, in fermentum elit. Donec aliquam massa sapien, eget varius lectus tincidunt ut. Fusce rhoncus ultricies luctus.</p> 
+        </div>
+        
+        <div id="contact" class="tabcontent">
+            <h3>Contact</h3>
+            <p>Vivamus nec sagittis ipsum, a mattis risus. Mauris sollicitudin elit vehicula urna condimentum efficitur. Vestibulum lacinia ipsum justo, sit amet ultrices leo placerat ac. Proin at ligula a massa interdum aliquet vel sed eros. Morbi diam mi, mollis eu vulputate vel, tempor non sem. Cras vulputate, nisl sit amet pulvinar mollis, eros nisl auctor turpis, vitae laoreet libero lacus vitae nulla. Donec consequat fringilla leo id vulputate. Aenean sagittis hendrerit neque, vel porta libero posuere non.</p> 
+        </div>
+
+
+          
+<!-- script -->
+<script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+<script>
+    function openPage(pageName,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("nav-link");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
+    
+    document.getElementById("defaultOpen").click();
+
+
+    // pang dark mode kuno
+
+    function myFunction() {
+    var element = document.getElementsByTagName('html')[0];
+    element.classList.toggle("dark-mode");
+
+    //para hindi mainvert yung image
+    var img = document. getElementById("try");
+    img.classList.toggle("img-kwan");
+    var img = document. getElementById("me");
+    img.classList.toggle("imgko");
+
+    var elem = document.getElementById("dark-light");
+    if (elem.value=="Light Mode") elem.value = "Dark Mode";
+    else elem.value = "Light Mode";
+    }
+    </script>
+</html>
